@@ -8,6 +8,3 @@
 **Finding Roots**:
 
 Bisection, False Position/Regular Falsi, Newton Raphson
-
-**AI**:
-
