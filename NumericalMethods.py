@@ -25,3 +25,10 @@ def false_position(f, a, b, tol=1e-5):
     else:
       a = c
   return (a + b)/2
+
+def newton_raphson(f, df, x0, tol=1e-5):
+  """Find root of f(x) = 0 using Newton-Raphson method with initial guess x0"""
+  x = x0
+  while abs(f(x)) > tol:
+    x = x - f(x)/df(x)
+  return x
