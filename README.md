@@ -3,7 +3,6 @@
 **Course Name**: Mathematical Analysis for Engineers  
 **Course Instructor**: Md. Ashraful Emon
 
-### ToC
 
 **Finding Roots**:
 
