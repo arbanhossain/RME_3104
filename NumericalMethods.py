@@ -32,3 +32,12 @@ def newton_raphson(f, df, x0, tol=1e-5):
   while abs(f(x)) > tol:
     x = x - f(x)/df(x)
   return x
+
+def secant(f, x0, x1, tol=1e-5):
+  """Find root of f(x) = 0 using secant method with initial guesses x0 and x1"""
+  x = x1
+  while abs(f(x)) > tol:
+    x = x - f(x)*(x - x0)/(f(x) - f(x0))
+    x0 = x1
+    x1 = x
+  return x
