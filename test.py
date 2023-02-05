@@ -1,4 +1,4 @@
-from NumericalMethods import *
+from FindRoot import *
 
 precision_digits = 4
 tolerance = 10**(-precision_digits)
